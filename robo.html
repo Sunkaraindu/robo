@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancing ROBO</title>
+</head>
+<body>
+    <h1>Dancing ROBO</h1>
+    <h2>let's dance with me</h2>
+    <div class="container">
+        <div class="panda">
+            <div class="face">
+                <div class="eye1"></div>
+                <div class="eye2"></div>
+            <div class="mouth"></div></div>
+                <div class="body">
+                    <div class="hand1"></div>
+                    <div class="hand2"></div>
+                    <div class="leg1"></div>
+                    <div class="leg2"></div>
+                </div>
+                </div>
+                </div>
+</body>
+</html>
+<style>
+    body{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+        padding: 20px;
+    }
+    .container{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform is easy-in-out;
+        background-color: rgb(228, 205, 169);
+    }
+    .face{
+        position: relative;
+        height: 200px;
+        width: 240px;
+        border-radius: 50% 50% 50% 50%;
+        background-color: rgb(135, 192, 157);
+        margin-bottom: 10px;
+    }
+    .eye1{
+        position: absolute;
+        height: 40px;
+        width: 30px;
+        background-color: black;
+        border-radius:50% ;
+        top: 60px;
+        left: 40px;
+        transition: width 4s;
+    }
+    .eye1:hover{
+        transform: scale(3);
+    }
+    .eye2{
+        position: absolute;
+        height: 40px;
+        width: 30px;
+        background-color: black;
+        border-radius:50% ;
+        top: 60px;
+        right: 40px;
+        transition: width 4s;
+    }
+    .eye2:hover{
+        transform: scale(4);
+    }
+    .mouth{
+    height: 20px;
+    width: 60px;
+    position: absolute;
+    border-radius: 30%;
+    background-color: rgb(10, 8, 8);
+    top:150px;
+    right: 85px;
+}
+.mouth:hover{
+    transform: scale(3);
+}
+    .body{
+        position: relative;
+        height: 250px;
+        width: 230px;
+        border-radius: 20% 20% 40% 40%;
+        background-color: rgb(6, 8, 112);
+    }
+    .hand1{
+        position: absolute;
+        height: 180px;
+        width: 40px;
+        border-radius: 30% 30% 30% 30%;
+        background-color: rgb(53, 25, 211);
+        margin-bottom: 30px;
+        border-left: 1000;
+    }    
+
+.hand1:hover{
+    transform: rotate(-90deg)
+}
+.hand2{
+    position:absolute;
+    width:40px;
+    height:180px;
+    border-radius: 30% 30% 30% 30%;
+    background-color:rgb(53, 25, 211);
+    right:1px;
+}
+.hand2:hover{
+    transform: rotate(90deg)
+}
+.leg1{
+    position:absolute;
+    width:45px;
+    height:120px;
+    border-radius: 30% 30% 30% 30%;
+   background-color:rgb(53, 25, 211);
+    left:60px;
+    top: 230px;
+    padding-top:5px;
+    
+}
+.leg1:hover{
+    transform: rotate(90deg)
+}
+.leg2{
+    position:absolute;
+    width:45px;
+    height:120px;
+    border-radius: 30% 30% 30% 30%;
+    background-color:rgb(53, 25, 211);
+    right:60px;
+    top: 230px;
+    padding-top: 5px;
+}
+.leg2:hover{
+    transform: rotate(90deg)
+}
+
+</style>
